@@ -5,3 +5,10 @@
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.csproj.CoreCompileInputs.cache
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.exe
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.pdb
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\bin\Debug\RecursiveSorts.exe.config
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\bin\Debug\RecursiveSorts.exe
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\bin\Debug\RecursiveSorts.pdb
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.csprojAssemblyReference.cache
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.csproj.CoreCompileInputs.cache
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.exe
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\RecursiveSorts\RecursiveSorts\obj\Debug\RecursiveSorts.pdb
