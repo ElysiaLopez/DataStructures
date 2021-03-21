@@ -64,22 +64,34 @@ namespace RecursiveSorts
             second = temp;
         }
 
+        static void QuickSort<T>(T[] array, int left, int right)
+            where T : IComparable<T>
+        {
+            if(left < right)
+            {
+                //var pivot = LomutoPartition(array, left, right);
+
+                //QuickSort(array, left, pivot - 1);
+                //QuickSort(array, pivot + 1, right);
+                var pivot = HoarePartition(array, left, right);
+                QuickSort(array, left, pivot);
+                QuickSort(array, pivot + 1, right);
+            }
+        }
+
         static void QuickSortLomuto<T>(T[] array)
             where T : IComparable<T>
         {
-            LomutoPartition(array, 0, array.Length);
-            return;
+            QuickSort(array, 0, array.Length - 1);
         }
 
-        static void LomutoPartition<T>(T[] array, int startIndex, int length)
+        static int LomutoPartition<T>(T[] array, int left, int right)
             where T : IComparable<T>
         {
-            if (length <= 1) return;
-            int pivotIndex = startIndex + length - 1;
-            var pivot = array[pivotIndex];
-            int wallIndex = startIndex - 1;
+            var pivot = array[right];
+            int wallIndex = left - 1;
 
-            for(int i = startIndex; i < startIndex + length; i++)
+            for(int i = left; i < right; i++)
             {
                 if (array[i].CompareTo(pivot) < 0) 
                 {
@@ -89,25 +101,22 @@ namespace RecursiveSorts
                 }
             }
             //swap pivot with wall
-            Swap(ref array[wallIndex + 1], ref array[pivotIndex]);
+            Swap(ref array[wallIndex + 1], ref array[right]);
 
-
-            LomutoPartition(array, 0, wallIndex + 1);
-            LomutoPartition(array, wallIndex + 2, length - (wallIndex + 2));
+            return wallIndex + 1;
         }
 
         static void QuickSortHoare<T>(T[] array)
             where T : IComparable<T>
         {
-            HoarePartition(array, 0, array.Length - 1);
+            QuickSort(array, 0, array.Length - 1);
         }
 
-        static void HoarePartition<T>(T[] array, int leftIndex, int rightIndex)
+        static int HoarePartition<T>(T[] array, int leftIndex, int rightIndex)
             where T : IComparable<T>
         {
             int left = leftIndex;
             int right = rightIndex;
-            if (leftIndex >= rightIndex) return;
             var pivot = array[leftIndex];
             while (rightIndex > leftIndex)
             {
@@ -127,13 +136,11 @@ namespace RecursiveSorts
                 if (rightIndex <= leftIndex) break;
                 Swap(ref array[leftIndex], ref array[rightIndex]);
             }
-
-            HoarePartition(array, left, rightIndex);
-            HoarePartition(array, rightIndex + 1, right);
+            return rightIndex;
         }
         static void Main(string[] args)
         {
-            var array = new int[] {67, 39, 10, 53, 81, 33};
+            var array = new int[] {7, 1, 9, 2, 5, 4, 3};
             QuickSortHoare(array);
         }
     }
