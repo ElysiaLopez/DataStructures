@@ -10,24 +10,14 @@ namespace SelfBalancingStuff
     {
         static void Main(string[] args)
         {
-            Comparison<int> comparison = new Comparison<int>((x, y) => y.CompareTo(x));
-            var binaryHeap = new BinaryHeap<int>(Comparer<int>.Create(comparison));
-            binaryHeap.Insert(1);
-            binaryHeap.Insert(9);
-            binaryHeap.Insert(2);
-            binaryHeap.Insert(13);
-            binaryHeap.Insert(10);
-            binaryHeap.Insert(3);
-            binaryHeap.Insert(17);
-            binaryHeap.Insert(5);
-            binaryHeap.Insert(11);
+            //Comparison<int> comparison = new Comparison<int>((x, y) => y.CompareTo(x));
+            //var binaryHeap = new BinaryHeap<int>(Comparer<int>.Create(comparison));
 
-            var numOfItems = binaryHeap.currIndex;
+            var tree = new AVLTree<int>();
+            tree.Insert(1);
+            tree.Insert(3);
+            tree.Insert(2);
 
-            for(int i = 0; i < numOfItems; i++)
-            {
-                Console.WriteLine(binaryHeap.Pop());
-            }
         }
     }
 }

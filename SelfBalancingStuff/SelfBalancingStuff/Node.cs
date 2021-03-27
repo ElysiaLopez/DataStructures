@@ -28,8 +28,10 @@ namespace SelfBalancingStuff
             get
             {
                 if (Left == null && Right == null) return 1;
-                int maxHeight = Left.Height.CompareTo(Right.Height) >= 0 ? Left.Height : Right.Height;
-                return maxHeight;
+                int leftHeight = Left != null ? Left.Height : 1;
+                int rightHeight = Right != null ? Right.Height : 1;
+                int maxHeight = leftHeight > rightHeight ? leftHeight : rightHeight;
+                return maxHeight + 1;
             }
         }
         public Node(T val)
