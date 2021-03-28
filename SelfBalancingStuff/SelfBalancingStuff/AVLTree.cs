@@ -81,8 +81,6 @@ namespace SelfBalancingStuff
             return pivot;
 
         }
-
-        //delete :)
         public void Delete(T val)
         {
             if (Root == null) throw new Exception("Tree is empty");
@@ -92,22 +90,42 @@ namespace SelfBalancingStuff
         {
             if(node.Value.CompareTo(val) == 0)
             {
-                return null;
+                //two children
+                if (node.Left != null && node.Right != null)
+                {
+                    var temp = node.Left;
+                    while (temp.Right != null)
+                    {
+                        temp = temp.Right;
+                    }
+                    node.Value = temp.Value;
+                    node = temp;
+                }
+                //no children
+                if (node.Left == null && node.Right == null) return null;
+
+                if (node.Left != null) return node.Left;
+                if (node.Right != null) return node.Right;
             }
             if(val.CompareTo(node.Value) < 0)
             {
                 if(node.Left != null)
                 {
-                    return RecursiveDelete(node.Left, val);
+                    node.Left = RecursiveDelete(node.Left, val);
+                    Balance(node);
+                    return node;
                 }
             }
             else
             {
                 if(node.Right != null)
                 {
-                    return RecursiveDelete(node.Right, val);
+                    node.Right = RecursiveDelete(node.Right, val);
+                    Balance(node);
+                    return node;
                 }
             }
+            throw new Exception($"Value \"{ val }\" not in tree");
         }
     }
 }

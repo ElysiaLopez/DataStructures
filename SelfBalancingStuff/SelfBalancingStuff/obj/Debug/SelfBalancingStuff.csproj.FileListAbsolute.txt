@@ -5,3 +5,10 @@
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.csproj.CoreCompileInputs.cache
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.exe
 \\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.pdb
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\bin\Debug\SelfBalancingStuff.exe.config
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\bin\Debug\SelfBalancingStuff.exe
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\bin\Debug\SelfBalancingStuff.pdb
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.csprojAssemblyReference.cache
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.csproj.CoreCompileInputs.cache
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.exe
+C:\Users\Elysia Lopez\Documents\GitHub\DataStructures\SelfBalancingStuff\SelfBalancingStuff\obj\Debug\SelfBalancingStuff.pdb
