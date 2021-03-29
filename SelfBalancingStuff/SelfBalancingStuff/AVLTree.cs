@@ -9,10 +9,12 @@ namespace SelfBalancingStuff
     class AVLTree<T>
         where T : IComparable<T>
     {
-        Node<T> Root { get; set; }
+        public Node<T> Root { get; set; }
+        public int Count { get; private set; }
         public AVLTree()
         {
             Root = null;
+            Count = 0;
         }
 
         public void Insert(T val)
@@ -29,6 +31,7 @@ namespace SelfBalancingStuff
         {
             if (node == null)
             {
+                Count++;
                 return new Node<T>(val);
             }
             if(val.CompareTo(node.Value) < 0)
@@ -81,10 +84,23 @@ namespace SelfBalancingStuff
             return pivot;
 
         }
-        public void Delete(T val)
+        public bool Delete(T val)
         {
-            if (Root == null) throw new Exception("Tree is empty");
+            if (Root == null) return false;
+
+            int oldCount = Count;
+
             Root = RecursiveDelete(Root, val);
+
+            return oldCount != Count;
+        }
+        private Node<T> GetMax(Node<T> node)
+        {
+            while (node.Right != null)
+            {
+                node = node.Right;
+            }
+            return node;
         }
         private Node<T> RecursiveDelete(Node<T> node, T val)
         {
@@ -93,14 +109,13 @@ namespace SelfBalancingStuff
                 //two children
                 if (node.Left != null && node.Right != null)
                 {
-                    var temp = node.Left;
-                    while (temp.Right != null)
-                    {
-                        temp = temp.Right;
-                    }
-                    node.Value = temp.Value;
-                    node = temp;
+                    var replacementNode = GetMax(node.Left);
+                    node.Value = replacementNode.Value;
+                    node.Left = RecursiveDelete(node.Left, replacementNode.Value);
+                  
+                    return node;
                 }
+                Count--;
                 //no children
                 if (node.Left == null && node.Right == null) return null;
 
@@ -109,23 +124,14 @@ namespace SelfBalancingStuff
             }
             if(val.CompareTo(node.Value) < 0)
             {
-                if(node.Left != null)
-                {
-                    node.Left = RecursiveDelete(node.Left, val);
-                    Balance(node);
-                    return node;
-                }
+                node.Left = RecursiveDelete(node.Left, val);
             }
             else
             {
-                if(node.Right != null)
-                {
-                    node.Right = RecursiveDelete(node.Right, val);
-                    Balance(node);
-                    return node;
-                }
+                node.Right = RecursiveDelete(node.Right, val);
+                
             }
-            throw new Exception($"Value \"{ val }\" not in tree");
+            return Balance(node);
         }
     }
 }

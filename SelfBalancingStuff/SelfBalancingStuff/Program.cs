@@ -13,15 +13,14 @@ namespace SelfBalancingStuff
             //Comparison<int> comparison = new Comparison<int>((x, y) => y.CompareTo(x));
             //var binaryHeap = new BinaryHeap<int>(Comparer<int>.Create(comparison));
 
-            var tree = new AVLTree<int>();
-            tree.Insert(1);
-            tree.Insert(3);
-            tree.Insert(2);
-            tree.Insert(6);
-            tree.Insert(4);
-            tree.Insert(5);
+            var list = new SortedDoublyLinkedList<int>();
+            list.Insert(1);
+            list.Insert(10);
+            list.Insert(3);
+            list.Insert(8);
+            list.Insert(5);
 
-            tree.Delete(4);
+            list.Remove(5);
 
         }
     }
