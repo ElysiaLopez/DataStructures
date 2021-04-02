@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AVLTree.cs" />
+    <Compile Include="BetterSkipList.cs" />
     <Compile Include="BinaryHeap.cs" />
     <Compile Include="LinkedListNode.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkipList.cs" />
+    <Compile Include="SkipListNode.cs" />
     <Compile Include="SortedDoublyLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
