@@ -50,12 +50,15 @@ namespace SelfBalancingStuff
             }
             Console.ForegroundColor = ConsoleColor.White;
         }
+
+        static Random random = new Random(5);
+
         static void Main(string[] args)
         {
             //Comparison<int> comparison = new Comparison<int>((x, y) => y.CompareTo(x));
             //var binaryHeap = new BinaryHeap<int>(Comparer<int>.Create(comparison));
             
-            var skipList = new BetterSkipList<int>();
+            var skipList = new BetterSkipList<int>(random);
             skipList.Add(1);
             skipList.Add(6);
             skipList.Add(3);
@@ -67,7 +70,7 @@ namespace SelfBalancingStuff
 
             while(true)
             {
-                var input = Console.ReadLine();
+                var input = Console.ReadLine().ToLower();
                 var value = Convert.ToInt32(input.Substring(1));
                 if(input[0] == 'r')
                 {
@@ -77,6 +80,10 @@ namespace SelfBalancingStuff
                 else if(input[0] == 'a')
                 {
                     skipList.Add(value);
+                }
+                else if(input[0] == 'c')
+                {
+                    Console.WriteLine(skipList.Contains(value));
                 }
                 BetterDraw(skipList);
             }

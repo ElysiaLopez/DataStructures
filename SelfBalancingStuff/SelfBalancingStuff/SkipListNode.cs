@@ -18,20 +18,7 @@ namespace SelfBalancingStuff
         public T Value { get; set; }
 
         //public int Height => Nexts.Length;
-        public int Height
-        {
-            get
-            {
-                int count = 1;
-                var temp = Bottom;
-                while (temp != null)
-                {
-                    count++;
-                    temp = temp.Bottom;
-                }
-                return count;
-            }
-        }
+        public int Height { get; set; }
 
         public SkipListNode(T val, int height)
         {

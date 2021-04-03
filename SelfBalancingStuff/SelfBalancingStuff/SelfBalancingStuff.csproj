@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AVLTree.cs" />
     <Compile Include="BetterSkipList.cs" />
+    <Compile Include="BetterSkipListNode.cs" />
     <Compile Include="BinaryHeap.cs" />
     <Compile Include="LinkedListNode.cs" />
     <Compile Include="Node.cs" />
