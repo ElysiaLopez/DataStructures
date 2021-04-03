@@ -1,0 +1,7 @@
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\bin\Debug\Trie.exe.config
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\bin\Debug\Trie.exe
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\bin\Debug\Trie.pdb
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\obj\Debug\Trie.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\obj\Debug\Trie.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\obj\Debug\Trie.exe
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\Trie\Trie\obj\Debug\Trie.pdb
