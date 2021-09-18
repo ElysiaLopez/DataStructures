@@ -1,0 +1,13 @@
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.exe
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.deps.json
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.runtimeconfig.json
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.runtimeconfig.dev.json
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.dll
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\bin\Debug\netcoreapp3.1\UnionFind.pdb
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.AssemblyInfoInputs.cache
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.AssemblyInfo.cs
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.dll
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.pdb
+\\GMRDC1\Folder Redirection\Elysia.Lopez\Documents\GitHub\DataStructures\UnionFind\UnionFind\obj\Debug\netcoreapp3.1\UnionFind.genruntimeconfig.cache

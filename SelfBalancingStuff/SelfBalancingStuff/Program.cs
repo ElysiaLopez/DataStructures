@@ -55,38 +55,39 @@ namespace SelfBalancingStuff
 
         static void Main(string[] args)
         {
+            
             //Comparison<int> comparison = new Comparison<int>((x, y) => y.CompareTo(x));
             //var binaryHeap = new BinaryHeap<int>(Comparer<int>.Create(comparison));
             
-            var skipList = new BetterSkipList<int>(random);
-            skipList.Add(1);
-            skipList.Add(6);
-            skipList.Add(3);
-            skipList.Add(4);
-            skipList.Add(9);
-            skipList.Add(2);
+            //var skipList = new BetterSkipList<int>(random);
+            //skipList.Add(1);
+            //skipList.Add(6);
+            //skipList.Add(3);
+            //skipList.Add(4);
+            //skipList.Add(9);
+            //skipList.Add(2);
 
-            BetterDraw(skipList);
+            //BetterDraw(skipList);
 
-            while(true)
-            {
-                var input = Console.ReadLine().ToLower();
-                var value = Convert.ToInt32(input.Substring(1));
-                if(input[0] == 'r')
-                {
-                    var wasAbleToRemove = skipList.Remove(value);
-                    Console.WriteLine(wasAbleToRemove);
-                }
-                else if(input[0] == 'a')
-                {
-                    skipList.Add(value);
-                }
-                else if(input[0] == 'c')
-                {
-                    Console.WriteLine(skipList.Contains(value));
-                }
-                BetterDraw(skipList);
-            }
+            //while(true)
+            //{
+            //    var input = Console.ReadLine().ToLower();
+            //    var value = Convert.ToInt32(input.Substring(1));
+            //    if(input[0] == 'r')
+            //    {
+            //        var wasAbleToRemove = skipList.Remove(value);
+            //        Console.WriteLine(wasAbleToRemove);
+            //    }
+            //    else if(input[0] == 'a')
+            //    {
+            //        skipList.Add(value);
+            //    }
+            //    else if(input[0] == 'c')
+            //    {
+            //        Console.WriteLine(skipList.Contains(value));
+            //    }
+            //    BetterDraw(skipList);
+            //}
         }
     }
 }
